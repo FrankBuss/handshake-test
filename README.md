@@ -94,10 +94,10 @@ It automatically caches the result. So for the first query it might need 20 ms o
 ;; MSG SIZE  rcvd: 929
 ```
 
-** TODO **
+**TODO**
 
 ## Create a name on the regtest blockchain
-test.js
+test.sh
 
 ## Create and set the nameserver records for the name
 ```
