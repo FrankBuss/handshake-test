@@ -17,10 +17,9 @@ sleep 3
 rm -rf ~/.hsd/regtest/
 
 # start server and wait a bit until started
-# root nameserver at port 53, recursive server at port 25350
+# root nameserver at port 25349, recursive server at port 25350
 echo "starting server"
-sudo setcap cap_net_bind_service=ep `which node`
-./bin/hsd --network regtest --http-host 0.0.0.0 --api-key=test --listen --max-inbound 50 --rs-host 0.0.0.0 --ns-port 53 --rs-port 25350 > /dev/null &
+./bin/hsd --network regtest --http-host 0.0.0.0 --api-key=test --listen --max-inbound 50 --rs-host 0.0.0.0 > /dev/null &
 sleep 5
 
 # call a RPC method
